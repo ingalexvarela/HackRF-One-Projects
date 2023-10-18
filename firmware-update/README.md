@@ -49,13 +49,9 @@ Agradecemos a la comunidad de HackRF por su contribución a la tecnología de ra
 Este script fue diseña en el 2023 para flashear la versión hackrf-2023.01.1 si desea una nueva versión, haga la descarga de la última versión .zip del firmware desde GitHub en la dirección: https://github.com/greatscottgadgets/hackrf/releases, y en el script modifique la linea 53:
 
 Ubique: 
-
-#-----------------------------------------------
-# Definir el nombre del archivo ZIP (cambiar nombre por 
-# el zip descargado de la última versión)
-# para descargar consultar el link
+-----------------------------------------------
 firmware_zip="hackrf-2023.01.1.zip" 
-# -------------------------------------------------
+-------------------------------------------------
 
 Inserte el nombre del archivo zip descargado y ejecute el script.
 
