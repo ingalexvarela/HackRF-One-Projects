@@ -50,10 +50,11 @@ Este script fue diseña en el 2023 para flashear la versión hackrf-2023.01.1 si
 
 Ubique: 
 -----------------------------------------------
-firmware_zip="hackrf-2023.01.1.zip" 
+firmware_zip="hackrf-2021.03.1.zip" 
 -------------------------------------------------
 
-Inserte el nombre del archivo zip descargado y ejecute el script.
+y reemplace con el nombre del archivo zip descargado y guardado en la carpeta del script.
+Finalmente ejecute el script.
 
 Esperamos que este script simplifique la actualización de firmware del HackRF One desde el sistema Ubuntu. ¡Diviértete experimentando con tu HackRF One!
 

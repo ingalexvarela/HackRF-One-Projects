@@ -66,25 +66,31 @@ echo -e "\e[1;35m---------------------------------------------------\e[0m"
 sleep 5
 # Verificar si el archivo ZIP existe
 if [ -e "$firmware_zip" ]; then
+  # Obtener el nombre del archivo sin la extensión ".zip"
+  extracted_folder_name=$(basename "$firmware_zip" .zip)
+  
   # Descomprimir el archivo ZIP en la carpeta actual
   unzip -o "$firmware_zip" -d "$script_dir"
-  echo "Archivo $firmware_zip descomprimido exitosamente y reemplazado en la carpeta actual."
   
-  # Ingresar a la carpeta descomprimida
-  cd "$script_dir/hackrf-2023.01.1"
-  echo "Ingresado a la carpeta hackrf-2023.01.1"
-  echo "cd $script_dir/hackrf-2023.01.1"
+  # Mostrar el nombre de la carpeta extraída
+  echo "Archivo $firmware_zip descomprimido exitosamente en la carpeta actual."
+  echo "Nombre de la carpeta extraída: $extracted_folder_name"
 
   # Ingresar a la carpeta descomprimida
-  echo "Ingresado a la carpeta firmware"
-  echo "cd firmware"
+  cd "$script_dir/$extracted_folder_name"
+  echo "Ingresado a la carpeta $extracted_folder_name"
+  echo "cd $script_dir/$extracted_folder_name"
+
+  # Ingresar a la carpeta descomprimida
+  echo "Ingresado a la carpeta firmware-bin"
+  echo "cd firmware-bin"
   cd firmware-bin
 
   # Ejecutando 
   echo "Ejecutando= hackrf_spiflash -w hackrf_one_usb.bin"
   hackrf_spiflash -w hackrf_one_usb.bin
   # volviendo a 
-  echo "regresando a la carpeta hackrf-2023.01.1"
+  echo "regresando a la carpeta $extracted_folder_name"
   echo "cd .."
   cd ..
   # Ejecutando 
@@ -108,5 +114,3 @@ if [ -e "$firmware_zip" ]; then
 else
   echo "El archivo $firmware_zip no se encuentra en este directorio."
 fi
-
-
