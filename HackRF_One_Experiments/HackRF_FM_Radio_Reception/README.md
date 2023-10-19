@@ -21,10 +21,8 @@ FM_Radio_Reception.grc
 
 6. Desconecta el HackRF One o cierra alguna de las ventanas de dialogo abiertas en GNU Radio Companion para terminar con el uso. 
 
-
 ## Licencia
 Este proyecto está bajo la [Licencia MIT](https://opensource.org/licenses/MIT). Consulta el [texto completo de la Licencia MIT](https://opensource.org/licenses/MIT) en el sitio web de OSI para obtener más detalles.
-
 
 ## Autor
 - Alex Alberto Varela Quirós.
@@ -37,7 +35,16 @@ Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, crea un for
 Agradecemos a la comunidad de HackRF por su contribución a la tecnología de radio definida por software.
 
 ## Notas
-Esperamos que este desarrollo funcione en el sistema Ubuntu y puedas ¡divertirte¡ y experimentar con tu HackRF One
+Esperamos que este desarrollo funcione en el sistema Ubuntu y puedas ¡divertirte¡ y experimentar con tu HackRF One.
+
+### HackRF_FM_Radio_Reception
+<p align="center">
+  <img src="https://i.postimg.cc/XNsyjtmw/BlockRFM.png" />
+</p>
+
+<p align="center">
+  <img src="https://i.postimg.cc/nzk9QWzf/evidencia-RFM.png" />
+</p>
 
 ## Contacto
 
