@@ -11,7 +11,7 @@ options:
     gen_linking: dynamic
     generate_options: qt_gui
     hier_block_src_path: '.:'
-    id: top_block
+    id: FM_Broadcast
     max_nouts: '0'
     output_language: python
     placement: (0,0)
@@ -51,7 +51,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [8, 144]
+    coordinate: [280, 12.0]
     rotation: 0
     state: enabled
 - name: audio_gain
@@ -72,7 +72,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [8, 568]
+    coordinate: [744, 12.0]
     rotation: 0
     state: enabled
 - name: audio_rate
@@ -84,7 +84,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [8, 677]
+    coordinate: [880, 12.0]
     rotation: 0
     state: enabled
 - name: bb_gain
@@ -105,7 +105,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [8, 464]
+    coordinate: [632, 12.0]
     rotation: 0
     state: enabled
 - name: if_gain
@@ -126,7 +126,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [8, 360]
+    coordinate: [520, 12.0]
     rotation: 0
     state: enabled
 - name: rf_gain
@@ -147,7 +147,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [8, 256]
+    coordinate: [408, 12.0]
     rotation: 0
     state: enabled
 - name: samp_rate
@@ -159,7 +159,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [8, 76]
+    coordinate: [176, 12.0]
     rotation: 0
     state: enabled
 - name: analog_nbfm_tx_0
@@ -179,7 +179,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [536, 268.0]
+    coordinate: [312, 268.0]
     rotation: 0
     state: disabled
 - name: analog_wfm_tx_0
@@ -199,7 +199,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [584, 72]
+    coordinate: [344, 132.0]
     rotation: 0
     state: enabled
 - name: blocks_complex_to_mag_0
@@ -215,7 +215,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1056.0, 272]
+    coordinate: [800.0, 336]
     rotation: 270
     state: enabled
 - name: blocks_multiply_const_vxx_0
@@ -233,7 +233,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [392, 148]
+    coordinate: [176, 164.0]
     rotation: 0
     state: enabled
 - name: blocks_wavfile_source_0
@@ -251,7 +251,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [168, 140]
+    coordinate: [8, 156.0]
     rotation: 0
     state: enabled
 - name: osmosdr_sink_0
@@ -512,7 +512,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1168, 20.0]
+    coordinate: [880, 76.0]
     rotation: 0
     state: enabled
 - name: qtgui_time_sink_x_0
@@ -609,7 +609,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1232, 380.0]
+    coordinate: [928, 348.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0
@@ -670,7 +670,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1224, 208.0]
+    coordinate: [904, 232.0]
     rotation: 0
     state: enabled
 - name: rational_resampler_xxx_0_0
@@ -690,7 +690,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [832, 80]
+    coordinate: [600, 140.0]
     rotation: 0
     state: enabled
 - name: rational_resampler_xxx_0_0_0
@@ -710,7 +710,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [824, 268.0]
+    coordinate: [576, 276.0]
     rotation: 0
     state: disabled
 

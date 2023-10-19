@@ -7,6 +7,8 @@ Script de Instalación: Un script que automatiza el proceso de configuración de
 
 Script de Desinstalación: Un script que permite desinstalar HackRF One y GNU Radio, además limpia los componentes relacionados.
 
+Script de actualización de firmware: Un script que permite actualizar el HackRF One a la última versión.
+
 Archivos para GNU Radio: Conjunto de archivos y ejemplos que puedes utilizar con GNU Radio para trabajar con HackRF One.
 
 ## Contacto

@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: GPL-3.0
 #
 # GNU Radio Python Flow Graph
-# Title: Top Block
+# Title: Fm Broadcast
 # GNU Radio version: 3.10.1.1
 
 from packaging.version import Version as StrictVersion
@@ -43,12 +43,12 @@ import time
 
 from gnuradio import qtgui
 
-class top_block(gr.top_block, Qt.QWidget):
+class FM_Broadcast(gr.top_block, Qt.QWidget):
 
     def __init__(self):
-        gr.top_block.__init__(self, "Top Block", catch_exceptions=True)
+        gr.top_block.__init__(self, "Fm Broadcast", catch_exceptions=True)
         Qt.QWidget.__init__(self)
-        self.setWindowTitle("Top Block")
+        self.setWindowTitle("Fm Broadcast")
         qtgui.util.check_set_qss()
         try:
             self.setWindowIcon(Qt.QIcon.fromTheme('gnuradio-grc'))
@@ -66,7 +66,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self.top_grid_layout = Qt.QGridLayout()
         self.top_layout.addLayout(self.top_grid_layout)
 
-        self.settings = Qt.QSettings("GNU Radio", "top_block")
+        self.settings = Qt.QSettings("GNU Radio", "FM_Broadcast")
 
         try:
             if StrictVersion(Qt.qVersion()) < StrictVersion("5.0.0"):
@@ -230,7 +230,7 @@ class top_block(gr.top_block, Qt.QWidget):
 
 
     def closeEvent(self, event):
-        self.settings = Qt.QSettings("GNU Radio", "top_block")
+        self.settings = Qt.QSettings("GNU Radio", "FM_Broadcast")
         self.settings.setValue("geometry", self.saveGeometry())
         self.stop()
         self.wait()
@@ -292,7 +292,7 @@ class top_block(gr.top_block, Qt.QWidget):
 
 
 
-def main(top_block_cls=top_block, options=None):
+def main(top_block_cls=FM_Broadcast, options=None):
 
     if StrictVersion("4.5.0") <= StrictVersion(Qt.qVersion()) < StrictVersion("5.0.0"):
         style = gr.prefs().get_string('qtgui', 'style', 'raster')
